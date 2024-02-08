@@ -1,0 +1,17 @@
+build:
+  version: "1.0"
+
+account:
+  message: "Welcome to EazyBank accounts related local APIs"
+  contactDetails:
+    name: "Ahmed AbdElnaby - Developer"
+    email: "ahmed.borhamy@vodafone.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
