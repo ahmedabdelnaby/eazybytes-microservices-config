@@ -1,0 +1,11 @@
+server:
+  port: 8070
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetchRegistry: false # we won't eureka server to fetch the microservices' info, we will make our microservices to register themselves to eureka instead
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # the URL that will be used by microservices to register themselves
